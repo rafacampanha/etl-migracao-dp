@@ -1,0 +1,12 @@
+campo_origem,campo_destino,regra
+RA_FILIAL,filial,texto sem espaços
+RA_MAT,matricula,zeros à esquerda (6 dígitos)
+RA_NOME,nome,maiúsculas sem espaços duplos
+RA_CIC,cpf,somente dígitos + validação do dígito verificador -> 000.000.000-00
+RA_NASC,data_nascimento,AAAAMMDD -> DD/MM/AAAA
+RA_ADMISSA,data_admissao,AAAAMMDD -> DD/MM/AAAA
+RA_DEMISSA,data_demissao,AAAAMMDD -> DD/MM/AAAA (vazio se ativo)
+RA_SITFOLH,situacao,' '=ATIVO; A=AFASTADO; F=FERIAS; D=DESLIGADO
+RA_CC,centro_custo,de-para centros_custo.csv
+RA_CODFUNC,cargo,de-para cargos.csv
+RA_SALARIO,salario,decimal com 2 casas

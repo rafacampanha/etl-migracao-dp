@@ -1,0 +1,7 @@
+verba_origem,verba_destino,descricao,tipo
+101,0001,Salário base,PROVENTO
+105,0010,Horas extras 50%,PROVENTO
+110,0020,Adicional noturno,PROVENTO
+401,0500,INSS,DESCONTO
+405,0510,IRRF,DESCONTO
+410,0520,Vale-transporte,DESCONTO
