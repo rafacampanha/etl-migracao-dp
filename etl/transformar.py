@@ -99,8 +99,8 @@ def relatorio(sra, srd, func, rej_f, mov, rej_m) -> str:
         "| Item | Origem | Migrado | Rejeitado |", "|---|---|---|---|",
         f"| Funcionários | {len(sra)} | {len(func)} | {len(rej_f)} |",
         f"| Movimentos | {len(srd)} | {len(mov)} | {len(rej_m)} |",
-        f"\n**Conciliação de valores:** origem {brl(total_origem)} · migrado + rejeitado {brl(total_migrado)} · "
-        f"{'✅ confere' if abs(total_origem - total_migrado) < 0.01 else '❌ diferença'}\n",
+        (f"\n**Conciliação de valores:** origem {brl(total_origem)} · migrado + rejeitado {brl(total_migrado)} · "
+        f"{'✅ confere' if abs(total_origem - total_migrado) < 0.01 else '❌ diferença'}\n"),
         "## Totais por competência e tipo (migrados)\n",
         mov.pivot_table(index="competencia", columns="tipo", values="valor", aggfunc="sum").round(2).to_markdown(floatfmt=",.2f"),
         "\n## Funcionários rejeitados\n",

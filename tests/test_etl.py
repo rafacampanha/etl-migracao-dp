@@ -2,7 +2,13 @@ import pandas as pd
 import pytest
 
 from etl.gerar_dados_ficticios import gerar
-from etl.transformar import cpf_ok, data_br, formatar_cpf, transformar_funcionarios, transformar_movimentos
+from etl.transformar import (
+    cpf_ok,
+    data_br,
+    formatar_cpf,
+    transformar_funcionarios,
+    transformar_movimentos,
+)
 
 
 @pytest.mark.parametrize("cpf,ok", [("529.982.247-25", True), ("12345678900", False), ("11111111111", False)])
