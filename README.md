@@ -1,5 +1,7 @@
 # 🔄 ETL de migração de dados do Departamento Pessoal (ERP → ERP)
 
+[![Testes](https://github.com/rafacampanha/etl-migracao-dp/actions/workflows/testes.yml/badge.svg)](https://github.com/rafacampanha/etl-migracao-dp/actions/workflows/testes.yml)
+
 Pipeline em Python para **migrar dados de DP** (cadastro de funcionários e histórico de folha) de um ERP antigo para o **layout de importação** de um ERP novo, com **de-para** de campos, verbas, cargos e centros de custo, **validação** (CPF, duplicidades, campos sem correspondência) e **conciliação de valores** antes da carga.
 
 > Inspirado numa migração real de ERP de que participei. **Todos os dados aqui são fictícios**, gerados por script, e os layouts são genéricos (a origem lembra as tabelas SRA/SRD, de funcionários e movimentos, comuns em ERPs nacionais).
